@@ -1,5 +1,5 @@
 {
-  "name": "02-ignite-timer",
+  "name": "desafio02CoffeDelivery",
   "private": true,
   "version": "0.0.0",
   "type": "module",
@@ -11,6 +11,7 @@
     "deploy": "./scriptDeploy.command"
   },
   "dependencies": {
+    "phosphor-react": "^1.4.1",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.0",

@@ -6,6 +6,7 @@ export const ContainerIntro = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 
   img#hero-bg {
     position: absolute;
@@ -17,12 +18,13 @@ export const ContainerIntro = styled.section`
   }
 `;
 export const ContentIntro = styled.section`
+  width: 100%;
   max-width: 1440px;
   height: 34rem;
   padding: 92px 20px;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
+  justify-content: space-evenly;
 `;
 export const InfoIntro = styled.section`
   display: flex;
@@ -81,8 +83,14 @@ export const ItemDetailIntro = styled.div<{
   }
 `;
 
-export const ImgIntro = styled.img`
-  /* flex: 1; */
-  height: 22.6rem;
-  width: 29.75rem;
+export const ImgIntro = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 36.75rem;
+  img {
+    height: 22.6rem;
+    width: 29.75rem;
+  }
 `;

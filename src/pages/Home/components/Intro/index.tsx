@@ -57,7 +57,9 @@ export function Intro() {
             </ItemDetailIntro>
           </DetailIntro>
         </InfoIntro>
-        <ImgIntro src={coffe} alt="" />
+        <ImgIntro>
+          <img src={coffe} alt="" />
+        </ImgIntro>
       </ContentIntro>
 
       <img src={background} alt="" id="hero-bg" />

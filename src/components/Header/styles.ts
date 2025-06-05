@@ -5,14 +5,8 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  height: 10rem;
+  height: 6.5rem;
   padding: 2rem 10rem;
-
-  nav {
-  }
-
-  a {
-  }
 `;
 
 export const ActionsContainer = styled.div`

@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { mixins } from "../../styles/mixins";
 
 export const HomeContainer = styled.p`
   display: flex;
@@ -6,9 +7,12 @@ export const HomeContainer = styled.p`
   align-items: center;
   flex-direction: column;
 `;
-// export const CardapioContainer = styled.div`
-//   width: 100%;
-//   max-width: 1440px;
-//   background-color: red;
-// `;
-// export const TituloCardapio = styled.p``;
+export const CardapioContainer = styled.div`
+  width: 100%;
+  max-width: 1440px;
+  padding: 2rem;
+`;
+export const TituloCardapio = styled.p`
+  padding: 4rem 0px;
+  ${mixins.fonts.titleL};
+`;

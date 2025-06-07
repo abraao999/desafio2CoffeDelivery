@@ -1,13 +1,15 @@
+import { CardCoffe } from "./components/CardCoffe/Index";
 import { Intro } from "./components/Intro";
-import { HomeContainer } from "./styles";
+import { CardapioContainer, HomeContainer, TituloCardapio } from "./styles";
 
 export function Home() {
   return (
     <HomeContainer>
       <Intro />
-      {/* <CardapioContainer>
+      <CardapioContainer>
         <TituloCardapio>Nossos cafés</TituloCardapio>
-      </CardapioContainer> */}
+        <CardCoffe />
+      </CardapioContainer>
     </HomeContainer>
   );
 }

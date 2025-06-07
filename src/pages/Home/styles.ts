@@ -10,7 +10,7 @@ export const HomeContainer = styled.p`
 export const CardapioContainer = styled.div`
   width: 100%;
   max-width: 1440px;
-  padding: 2rem;
+  padding: 0px 2rem;
 `;
 export const TituloCardapio = styled.p`
   padding: 4rem 0px;

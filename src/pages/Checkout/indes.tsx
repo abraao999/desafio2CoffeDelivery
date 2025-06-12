@@ -68,7 +68,7 @@ export function Checkout() {
       aux = aux + item.price;
     });
     setValorItens(aux);
-  }, []);
+  }, [valorItens]);
   return (
     <CheckoutContainer>
       <InfoContainer>

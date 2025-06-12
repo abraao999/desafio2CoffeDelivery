@@ -1,12 +1,12 @@
 import styled from "styled-components";
 import { mixins } from "../../styles/mixins";
 
-export const ButtonContainer = styled.div`
+export const ButtonContainer = styled.div<{ altura: string }>`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 4.5rem;
-  height: 2.37rem;
+  height: ${(props) => props.altura};
   border: none;
   background: ${(props) => props.theme.colors["base-button"]};
   border-radius: 6px;

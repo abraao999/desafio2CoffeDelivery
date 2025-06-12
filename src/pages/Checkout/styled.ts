@@ -27,14 +27,106 @@ export const InfoContainer = styled.div`
 export const CartContainer = styled.div`
   max-width: 498px;
   width: 28rem;
-  height: 32rem;
+  height: auto;
   background: ${(props) => props.theme.colors["base-card"]};
 `;
+export const ListItens = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem;
+  padding: 2.5rem;
+  /* gap: 1.5rem; */
+  /* div {
+    padding-bottom: 1.5rem;
+  } */
 
+  div + div {
+    padding: 1.5rem 0px;
+  }
+`;
+
+export const ItemCart = styled.div`
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid ${(props) => props.theme.colors["base-button"]};
+  padding-bottom: 1.5rem;
+  div.left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  div {
+    display: flex;
+    flex-direction: row;
+  }
+
+  div.ContainerButton {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+  p#title {
+    color: ${(props) => props.theme.colors["base-subtitle"]};
+    ${mixins.fonts.textM}
+  }
+  span {
+  }
+`;
+export const ImageItemCart = styled.img`
+  width: 4rem;
+  height: 4rem;
+  margin-right: 1rem;
+`;
+
+export const ButtonRemove = styled.button`
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  width: 5.68rem;
+  height: 2rem;
+  background: ${(props) => props.theme.colors["base-button"]};
+  padding: 0px 0.5rem;
+  border-radius: 6px;
+  svg {
+    color: ${(props) => props.theme.colors.purple};
+    margin-right: 0.25rem;
+  }
+  span {
+    ${mixins.fonts.buttonM}
+  }
+`;
+
+export const TotalContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  p {
+    display: flex;
+    justify-content: space-between;
+    color: ${(props) => props.theme.colors["base-text"]};
+  }
+  p#total {
+    ${mixins.fonts.textL}
+    font-weight:bold;
+  }
+`;
+
+export const ButtonConfirm = styled.button`
+  height: 2.87rem;
+  background: ${(props) => props.theme.colors.yellow};
+  color: ${(props) => props.theme.colors.white};
+  border-radius: 6px;
+  ${mixins.fonts.buttonG}
+
+  &:hover {
+    background: ${(props) => props.theme.colors["yellow-dark"]};
+  }
+`;
 export const FormEntrega = styled.div`
   display: flex;
   height: 23.25rem;
-  margin-top: 1.5rem;
+  margin-top: 0.9rem;
   width: 40rem;
   padding: 2.5rem;
   flex-direction: column;
@@ -113,7 +205,6 @@ export const PayloadContainer = styled.div`
 
   background: ${(props) => props.theme.colors["base-card"]};
 `;
-
 export const HeaderPayload = styled.div`
   display: flex;
   flex-direction: row;

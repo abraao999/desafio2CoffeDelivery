@@ -34,7 +34,7 @@ export function CardCoffe() {
             </p>
 
             <div>
-              <ButtonQuantidade />
+              <ButtonQuantidade altura="2.37rem" />
               <ButtonBuy>
                 <ShoppingCart weight="fill" size={22} />
               </ButtonBuy>

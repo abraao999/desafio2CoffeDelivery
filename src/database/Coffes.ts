@@ -1,4 +1,4 @@
-interface ListCoffeType {
+export interface ListCoffeType {
   id: string;
   type: string[];
   title: string;

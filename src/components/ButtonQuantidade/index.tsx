@@ -1,9 +1,13 @@
 import { Minus, Plus } from "phosphor-react";
 import { ButtonContainer } from "./styles";
 
-export function ButtonQuantidade() {
+interface PropsType {
+  altura: string;
+}
+
+export function ButtonQuantidade({ altura }: PropsType) {
   return (
-    <ButtonContainer>
+    <ButtonContainer altura={altura}>
       <button>
         <Minus weight="bold" size={14} />
       </button>

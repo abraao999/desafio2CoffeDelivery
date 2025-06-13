@@ -21,7 +21,7 @@ export const ContentIntro = styled.section`
   width: 100%;
   max-width: 1440px;
   height: 34rem;
-  padding: 92px 20px;
+  padding: 20px 10rem;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
